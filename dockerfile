@@ -53,7 +53,6 @@ RUN apt-get update && \
 		mpm_worker \
 		proxy \
 		proxy_http \
-		rewrite \
 		ssl \
 		proxy_balancer \
 		remoteip \
