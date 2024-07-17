@@ -1,0 +1,30 @@
+/vendor
+/.editorconfig
+/.gitattributes
+/.idea
+/.vscode
+
+# Ignore drupal core.
+web/core
+
+# Ignore paths that contain user-generated content.
+web/sites/*/files
+web/sites/*/private
+/files-private
+
+# Ignore contrib modules, profiles, and themes. These should be created during build process.
+web/modules/contrib
+web/themes/contrib
+web/profiles/contrib
+
+# Ignore library items that should be installed via composer.
+web/libraries
+
+# Secrets and ENV specific configuration.
+/.env
+
+# Database dump files
+*.sql
+*.sql.gz
+
+

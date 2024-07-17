@@ -14,7 +14,7 @@ COPY var/www/scripts /var/www/scripts
 
 WORKDIR /var/www
 
-RUN composer install
+RUN composer install --ignore-platform-reqs
 
 FROM ubuntu:22.04 AS image
 
